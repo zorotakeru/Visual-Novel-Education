@@ -1,0 +1,11 @@
+Show character name : character name : ex Boy
+Talk : "your dialogue" : ex "Hi, Namaku Boy."
+Talk with character name : character name "your dialogue" : ex Boy "Hi, Namaku Boy."
+
+function : function name(parameter)
+set background : setBackground (image name,speed,smooth true or false) : ex setBackground(rumah,1,true)
+move character : setPosition(character name,direction x,direction y) : ex move(Boy,0.2,0)
+setExpression(character name,face or body,sprite name,speed) : ex setExpression(Boy,face,open,3)
+hide character : hideCharacter(Character Name) : ex hideCharacter(Girl)
+show or hide choice screen: choice(show/hide) :ex choice(show) 
+flip horizontal : flip(Character Name) :ex flip(Boy)

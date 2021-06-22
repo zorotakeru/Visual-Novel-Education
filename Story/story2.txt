@@ -1,0 +1,78 @@
+setBackground(bgclass)
+
+Girl "Hai Boy..." setPosition(Girl,0.9,0)  setExpression(Girl,body,uniform,10)  flip(Girl) 
+
+Boy "Oh, Halo Girl... " setPosition(Boy,0.1,0)  setExpression(Boy,body,uniform,10) setExpression(Boy,face,blink,10) 
+
++"Ternyata kamu sudah sampai lebih dulu Girl." setExpression(Boy,face,open,10)
+
+Girl "Iya..." setExpression(Girl,face,blink,10) 
+
++"Karena sampah-sampah yang ada di jalan sudah banyak berkurang" setExpression(Girl,face,open,10) 
+
+Boy "Wah ternyata semua orang sumah mulai bergerak untuk membuat dunia ini menjadi lebih baik"
+
+Girl "Iya, "
+
++"Kamu masih ingat kan penjelasan guru tentang sampah?"
+
+Boy "Sudah jelas aku masih ingat"
+
+"Sampah terdiri dari 3 jenis... "
+
++"Ada organik," setBackground(bgclassorganik)
+
++" anorganik," setBackground(bgclassanorganik)
+
++" dan B3 atau Residu" setBackground(bgclassresidu)
+
+Girl "Benar" setExpression(Girl,face,blink,10) 
+
+"Sampah organik adalah sampah-sampah alami seperti dedaunan, ranting pohon, dan sisa makanan yang mudah terurai di alam." setBackground(bgclassporganik) setExpression(Girl,face,open,10) 
+
+Boy "Lalu sampah anorganik adalah sampah-sampah yang sulit terurai seperti plastik, kaleng, dan botol kaca." setBackground(bgclasspanorganik)
+
+Boy "Yang terakhir adalah sambah B3 atau Residu yang berarti Bahan Berbahaya dan Beracun seperti sampah bekas lampu dan juga bahan kimia." setBackground(bgclasspresidu)
+
+Girl "Wah hebat sekali kamu masih mengingatnya"  
+
+Boy "Tentu saja aku masih mengingat itu agar aku dapat membuang sampai sesuai pada tempatnya dan tidak membahayakan bumi ini" setBackground(bgclass)
+
+Girl "Jadi... "
+
++"Sudah berapa banyak sampah yang kamu buang pada tempatnya?"
+
+Boy "Pastinya sangat banyak... " setExpression(Boy,face,blink,10) 
+
++"Aku membawa sampah yang ada di jalanan menuju sekolah lalu membuangnya ke tempat sampah di depan sekolah" setExpression(Boy,face,open,10) 
+
+"Bagaimana deganmu?"
+
+Girl "Tidak kalah darimu, "
+
++"Aku membantu warga membersihkan semua sampah yang ada di lingkungan rumahku"
+
+Boy "Waw... "
+
++"Hebat sekali"
+
+"Semoga dengan apa yang kita lakukan dapat membuat dunia menjadi lebih bersih dan membaik"
+
+Girl "Benar sekali Boy"
+
+Girl "Ngomong-ngomong...." 
++" aku harus pergi ruang guru untuk mengambil buku harianku"
+
+Girl "Sampai jumpa Boy" hideCharacter(Girl)
+
+Boy "Sampai jumpa Girl"
+
+Boy "Hai semuanya, " setPosition(Boy,0.5,0,0.2)
+
++"sekarang saatnya aku belajar"
+
+Boy "Terimakasih sudah mencoba permainan ini" setExpression(Boy,face,blink,10) 
+
+Boy "Semoga bermanfaat" setExpression(Boy,face,open,10) 
+
+menu()

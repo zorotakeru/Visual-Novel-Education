@@ -1,0 +1,33 @@
+Boy "Halo, Namaku Boy." setBackground(rumah)
+
+"Aku berumur 7 tahun."
+
+"Sebentar lagi aku akan pergi ke sekolah." setExpression(Boy,face,blink,10)
+
+"Ngomong-ngomong.... " setExpression(Boy,face,open,3)
+
++"Tahukah kalian, dunia ini sedang dalam bahaya. " setPosition(Boy,0.2,0) setBackground(polluted-planet-garbage)
+
++"Banyak sampah berserakan di luar sana yang menyebabkan bumi menjadi sakit." 
+
+"Guruku pernah berkata... "
+
++"Dengan membuang sampah pada tempatnya kita dapat menyelamatkan dunia"
+
+"Akhir-akhir ini di jalan menuju ke sekolah banyak sekali sampah berserakan"
+
+"Oleh karena itu, "
+
++"Bantu aku mengambil sampah-sampah yang berserakan di jalan lalu membuangnya setelah sampai di sekolah."
+
+"Oh... " setExpression(Boy,face,blink,10)
+
++"Sekarang sudah saatnya aku pergi ke sekolah"setExpression(Boy,face,open,3) setBackground(rumah,1,true)
+
+"Aku harus bersiap siap" hideCharacter(Boy) setExpression(Boy,body,uniform,10) 
+
+Boy "Aku sudah siap" 
+
+"Aku akan pergi ke sekolah..."
+
+choice(show)
