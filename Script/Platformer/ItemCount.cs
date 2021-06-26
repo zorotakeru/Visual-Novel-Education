@@ -11,7 +11,6 @@ public class ItemCount : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         counter.text = "" + count + "";
     }
 

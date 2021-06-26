@@ -18,24 +18,24 @@ public class CharacterManager : MonoBehaviour
         instance = this;
     }
 
-    public Character GetCharacter(string characterName, bool createCharacterIfDoesNotExist = true, bool enableCreatedCharacterOnStart = true)
+    public Character GetCharacter(string characterName)
     {
         int index = -1;
         if(characterDictionary.TryGetValue (characterName, out index))
         {
             return characters[index];
         }
-        else if(createCharacterIfDoesNotExist)
+        else
         {
-            return CreateCharacter(characterName, enableCreatedCharacterOnStart);
+            return CreateCharacter(characterName);
         }
 
-        return null;
+        
     }
 
-    public Character CreateCharacter(string characterName, bool enableOnStart = true)
+    public Character CreateCharacter(string characterName)
     {
-        Character newCharacter = new Character(characterName, enableOnStart);
+        Character newCharacter = new Character(characterName);
         characterDictionary.Add(characterName, characters.Count);
         characters.Add(newCharacter);
 

@@ -11,17 +11,12 @@ public class BasicMovement : MonoBehaviour
     private float directionX;
     private bool facingRight = true;
     private Vector3 localScale;
-    public static BasicMovement instance;
-    private bool stick;
-    public GameObject map;
 
 
     private int i = 1;
     // Start is called before the first frame update
     void Start()
     {
-
-        instance = this;
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         localScale = transform.localScale;

@@ -20,15 +20,12 @@ public class Item : MonoBehaviour
 
     void Start()
     {
-        InitScale = gameObject.transform.localScale.x;
-        TargetScale = InitScale + 0.2f;
-        _currentScale = InitScale;
-        _deltaTime = AnimationTimeSeconds / FramesCount;
-        _dx = (TargetScale - InitScale) / FramesCount;
-
+        sizeScaller();
         itemCount = FindObjectOfType(typeof(ItemCount)) as ItemCount;
         StartCoroutine(Breath());
     }
+
+    
 
     // Update is called once per frame
     void Update()
@@ -57,7 +54,15 @@ public class Item : MonoBehaviour
         }
     }
 
-    
+    private void sizeScaller()
+    {
+        InitScale = gameObject.transform.localScale.x;
+        TargetScale = InitScale + 0.2f;
+        _currentScale = InitScale;
+        _deltaTime = AnimationTimeSeconds / FramesCount;
+        _dx = (TargetScale - InitScale) / FramesCount;
+    }
+
     private IEnumerator Breath() //https://answers.unity.com/questions/1074165/how-to-increase-and-decrease-object-scale-over-tim.html
     {
         while (true)

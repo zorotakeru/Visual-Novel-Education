@@ -39,6 +39,7 @@ public class UImenu : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 
     public void Keluar()

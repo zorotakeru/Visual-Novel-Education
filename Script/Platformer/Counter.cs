@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Counter : MonoBehaviour
 {
-    public float timeRemaining ;
-    public float time;
+    private float timeRemaining ;
+    private float time;
     public GameObject btnEasy;
     public GameObject btnMedium;
     public GameObject btnHard;

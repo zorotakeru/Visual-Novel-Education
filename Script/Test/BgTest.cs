@@ -23,7 +23,7 @@ public class BgTest : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             print("a");
-            layer.TransitionToTexture(tex, speed, smooth);
+            layer.SetTexture(tex);
         }
     }
 }

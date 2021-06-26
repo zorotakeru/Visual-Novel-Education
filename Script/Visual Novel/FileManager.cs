@@ -7,13 +7,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class FileManager : MonoBehaviour
 {
 
-	public static List<string> ArrayToList(string[] array, bool removeBlankLines = true)
+	public static List<string> ArrayToList(string[] array)
 	{
 		List<string> list = new List<string>();
 		for (int i = 0; i < array.Length; i++)
 		{
 			string s = array[i];
-			if (s.Length > 0 || !removeBlankLines)
+			if (s.Length > 0 )
 			{
 				list.Add(s);
 			}

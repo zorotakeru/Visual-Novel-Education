@@ -9,7 +9,7 @@ public class TestChar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Boy = CharacterManager.instance.GetCharacter("Boy",enableCreatedCharacterOnStart: false);
+        Boy = CharacterManager.instance.GetCharacter("Boy");
         Boy.GetSprite(1);
     }
 
